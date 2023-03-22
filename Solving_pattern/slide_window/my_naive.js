@@ -7,6 +7,7 @@
 //所以i 会停在 倒数n个数字，比如剩下三个数字的时候， 我们不想要最后两位数字也被计算，我们需要倒数第三位数，所以3-1，停留在倒数第三个数
 //[1,2,4,(2),8,1], i 会停在括号2里， 停的地方为<length -(n-1)
 //设置max， max 为第一次粗存的数字， 之后每次相加的数（temp）如果大于max， 把该temp 设置为max；
+// O(N^2)
 const maxSubarraySum = (arr, n) => {
   let max = -Infinity; //将max设置为负的无限大
   for (i = 0; i < arr.length - (n - 1); i++) {
