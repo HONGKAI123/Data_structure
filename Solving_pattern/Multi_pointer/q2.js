@@ -29,11 +29,11 @@ function countUniqueValues(arr) {
   }
   return result;
 }
+countUniqueValues([1, 2, 3]);
 
 //Kenny 的结果
 function fibonacciGenerator(n) {
   //Do NOT change any of the code above 👆
-
   //Write your code here:
   //  let result = []
   // if(n ==1){
@@ -48,32 +48,26 @@ function fibonacciGenerator(n) {
   //     result.push(1)
   //     for (let i = 2; i<n;i++){
   //         result.push(result[result.length-2] + result[result.length-1])
-
   //     }
-
   // }
   //  return result ;
-
-  var fibo = [];
-  if (n >= 1) {
-    //assume n will not be 0
-    fibo.push(0);
-  }
-  if (n >= 2) {
-    fibo.push(1);
-  }
-  if (n > 2) {
-    var fiboNum = 1;
-    for (var i = 1; i < n - 1; i++) {
-      fibo.push(fiboNum);
-      fiboNum = fiboNum + fibo[i]; //2
-    }
-  }
-
-  console.log(fibo);
-
+  // var fibo = [];
+  // if (n >= 1) {
+  //   //assume n will not be 0
+  //   fibo.push(0);
+  // }
+  // if (n >= 2) {
+  //   fibo.push(1);
+  // }
+  // if (n > 2) {
+  //   var fiboNum = 1;
+  //   for (var i = 1; i < n - 1; i++) {
+  //     fibo.push(fiboNum);
+  //     fiboNum = fiboNum + fibo[i]; //2
+  //   }
+  // }
+  // console.log(fibo);
   //Return an array of fibonacci numbers starting from 0.
-
   //Do NOT change any of the code below 👇
 }
-fibonacciGenerator(2);
+// fibonacciGenerator(2);
